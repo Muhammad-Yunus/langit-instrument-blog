@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Artikel — Langit Instrument</title>
+  <meta name="description" content="Artikel, riset, dan eksperimen teknis Langit Instrument di bidang AI, Computer Vision, IoT, Embedded System, FPGA, dan Instrumentasi Elektronik.">
+  <meta name="theme-color" content="#101108" id="themeColorMeta">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="id_ID">
+  <meta property="og:site_name" content="Langit Instrument">
+  <meta property="og:title" content="Artikel — Langit Instrument">
+  <meta property="og:description" content="Catatan riset dan eksperimen teknis dari Langit Instrument.">
+  <meta property="og:image" content="assets/img/banner.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="assets/img/logo_square.png">
+  <link rel="apple-touch-icon" href="assets/img/logo_square.png">
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem("langit-theme");
+        var theme = stored || (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+        document.documentElement.setAttribute("data-theme", theme);
+      } catch (error) {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/theme.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Lompat ke konten</a>
+  <div class="reading-progress" aria-hidden="true"><span id="readingProgress"></span></div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="Langit Instrument — Beranda">
+        <img class="brand__mark" src="assets/img/logo_square.png" alt="" width="38" height="38">
+        <span class="brand__text">
+          <strong>Langit</strong>
+          <span>Instrument</span>
+        </span>
+      </a>
+      <nav class="nav" id="primaryNav" aria-label="Navigasi utama">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html#beranda">Beranda</a></li>
+          <li><a class="nav__link" href="index.html#layanan">Layanan</a></li>
+          <li><a class="nav__link" href="index.html#artikel">Artikel</a></li>
+          <li><a class="nav__link" href="index.html#video">Video</a></li>
+          <li><a class="nav__link" href="index.html#tentang">Tentang</a></li>
+          <li><a class="nav__link" href="index.html#kontak">Kontak</a></li>
+        </ul>
+        <div class="nav__actions">
+          <a class="btn btn--accent btn--sm" href="https://wa.me/6281338327438?text=Halo%20Langit%20Instrument%2C%20saya%20ingin%20berkonsultasi%20mengenai%20proyek%20riset%20dan%20teknologi." target="_blank" rel="noopener">
+            <i data-lucide="message-circle"></i> Hubungi via WhatsApp
+          </a>
+        </div>
+      </nav>
+      <div class="header__tools">
+        <button class="icon-btn" type="button" data-theme-toggle aria-label="Aktifkan tema terang" title="Tema terang" aria-pressed="false">
+          <i data-lucide="sun" class="theme-icon theme-icon--sun"></i>
+          <i data-lucide="moon" class="theme-icon theme-icon--moon"></i>
+        </button>
+        <button class="icon-btn nav-toggle" type="button" data-nav-toggle aria-label="Buka menu" aria-controls="primaryNav" aria-expanded="false">
+          <i data-lucide="menu" class="nav-icon nav-icon--open"></i>
+          <i data-lucide="x" class="nav-icon nav-icon--close"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="article-page">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html"><i data-lucide="home"></i> Beranda</a>
+        <i data-lucide="chevron-right"></i>
+        <a href="index.html#artikel">Artikel</a>
+        <i data-lucide="chevron-right"></i>
+        <span id="breadcrumbTitle">Detail artikel</span>
+      </nav>
+
+      <div class="article-not-found" id="articleNotFound" hidden>
+        <p class="eyebrow">404 // Tidak ditemukan</p>
+        <h1>Artikel tidak ditemukan.</h1>
+        <p>Slug artikel tidak valid atau konten belum disinkronkan dari Medium. Jalankan <strong>node tools/sync-medium.mjs</strong> lalu muat ulang halaman.</p>
+        <a class="btn btn--accent" href="index.html#artikel"><i data-lucide="arrow-left"></i> Kembali ke daftar artikel</a>
+      </div>
+
+      <article id="articleRoot" hidden>
+        <header class="article-header">
+          <div class="article-tags" id="articleTags"></div>
+          <h1 class="article-title" id="articleTitle"></h1>
+          <div class="article-meta">
+            <span><i data-lucide="calendar"></i><span id="articleDate"></span></span>
+            <span><i data-lucide="clock"></i><span id="articleRead"></span></span>
+            <span><i data-lucide="pen-line"></i>Muhammad Yunus</span>
+          </div>
+        </header>
+
+        <figure class="article-cover" id="articleCover" hidden>
+          <img id="articleCoverImg" src="" alt="">
+        </figure>
+
+        <div class="article-layout">
+          <div class="article-main">
+            <div class="prose" id="articleBody"></div>
+            <div class="article-end">
+              <a class="btn btn--ghost" href="index.html#artikel"><i data-lucide="arrow-left"></i> Semua artikel</a>
+              <a class="btn btn--accent" id="articleMediumLink" href="#" target="_blank" rel="noopener">
+                <i data-lucide="external-link"></i> Baca di Medium
+              </a>
+            </div>
+          </div>
+          <aside class="article-side" aria-label="Bagikan artikel">
+            <div class="side-card">
+              <h2 class="side-card__title">Bagikan</h2>
+              <div class="share-row">
+                <a class="share-btn" id="shareWa" href="#" target="_blank" rel="noopener"><i data-lucide="message-circle"></i> WhatsApp</a>
+                <a class="share-btn" id="shareFb" href="#" target="_blank" rel="noopener"><i data-lucide="users"></i> Facebook</a>
+                <button class="share-btn" id="shareCopy" type="button"><i data-lucide="copy"></i> Salin link</button>
+              </div>
+            </div>
+            <div class="side-card side-cta">
+              <h2 class="side-card__title">Butuh bantuan teknis?</h2>
+              <p>Diskusikan kebutuhan hardware, firmware, atau sistem cerdasmu.</p>
+              <a class="btn btn--accent btn--sm" href="https://wa.me/6281338327438?text=Halo%20Langit%20Instrument%2C%20saya%20ingin%20berkonsultasi%20mengenai%20proyek%20riset%20dan%20teknologi." target="_blank" rel="noopener">
+                <i data-lucide="message-circle"></i> Chat WhatsApp
+              </a>
+            </div>
+          </aside>
+        </div>
+
+        <section class="article-related" id="articleRelated" hidden>
+          <div class="related-head">
+            <h2>Artikel terkait</h2>
+            <a class="mono-label" href="index.html#artikel">Lihat semua</a>
+          </div>
+          <div class="article-grid" id="relatedGrid"></div>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="Langit Instrument — Beranda">
+            <img class="brand__mark" src="assets/img/logo_square.png" alt="" width="38" height="38" loading="lazy">
+            <span class="brand__text">
+              <strong>Langit</strong>
+              <span>Instrument</span>
+            </span>
+          </a>
+          <p>Riset &amp; pengembangan AI, Computer Vision, IoT, Embedded System, FPGA, dan Instrumentasi Elektronik.</p>
+          <div class="footer-social">
+            <a href="https://medium.com/@yunusmuhammad007" target="_blank" rel="noopener" aria-label="Medium"><i data-lucide="book-open"></i></a>
+            <a href="https://www.youtube.com/channel/UC5-3Ue-dDU3TV0m1MQJ0EOA" target="_blank" rel="noopener" aria-label="YouTube"><i data-lucide="monitor-play"></i></a>
+            <a href="https://www.facebook.com/langitinstrument/" target="_blank" rel="noopener" aria-label="Facebook"><i data-lucide="users"></i></a>
+            <a href="https://wa.me/6281338327438" target="_blank" rel="noopener" aria-label="WhatsApp"><i data-lucide="message-circle"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigasi</h4>
+          <ul>
+            <li><a href="index.html#beranda">Beranda</a></li>
+            <li><a href="index.html#layanan">Layanan</a></li>
+            <li><a href="index.html#artikel">Artikel</a></li>
+            <li><a href="index.html#video">Video</a></li>
+            <li><a href="index.html#tentang">Tentang</a></li>
+            <li><a href="index.html#kontak">Kontak</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Konten</h4>
+          <ul>
+            <li><a href="https://medium.com/@yunusmuhammad007" target="_blank" rel="noopener"><i data-lucide="book-open"></i> Medium</a></li>
+            <li><a href="https://www.youtube.com/channel/UC5-3Ue-dDU3TV0m1MQJ0EOA" target="_blank" rel="noopener"><i data-lucide="monitor-play"></i> YouTube</a></li>
+            <li><a href="https://www.facebook.com/langitinstrument/" target="_blank" rel="noopener"><i data-lucide="users"></i> Facebook</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Kontak</h4>
+          <ul>
+            <li><a href="https://wa.me/6281338327438" target="_blank" rel="noopener"><i data-lucide="message-circle"></i> +62 813-3832-7438</a></li>
+            <li><a href="https://www.facebook.com/langitinstrument/" target="_blank" rel="noopener"><i data-lucide="users"></i> Langit Instrument</a></li>
+            <li><a href="https://medium.com/@yunusmuhammad007" target="_blank" rel="noopener"><i data-lucide="pen-line"></i> @yunusmuhammad007</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="year">2026</span> Langit Instrument. Seluruh hak cipta dilindungi.</span>
+        <span>Riset · Rekayasa · Instrumentasi</span>
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/6281338327438?text=Halo%20Langit%20Instrument%2C%20saya%20ingin%20berkonsultasi%20mengenai%20proyek%20riset%20dan%20teknologi." target="_blank" rel="noopener" aria-label="Hubungi Langit Instrument via WhatsApp">
+    <i data-lucide="message-circle"></i>
+    <span class="wa-float__label">Chat via WhatsApp</span>
+  </a>
+
+  <button class="to-top" type="button" data-back-top aria-label="Kembali ke atas">
+    <i data-lucide="arrow-up"></i>
+  </button>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="assets/data/articles.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/ui.js"></script>
+  <script src="assets/js/article.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    if (window.lucide && window.lucide.createIcons) {
+      window.lucide.createIcons();
+    }
+  </script>
+</body>
+</html>

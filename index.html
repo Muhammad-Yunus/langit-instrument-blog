@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Langit Instrument — Riset &amp; Pengembangan AI, Computer Vision, IoT, FPGA</title>
+  <meta name="description" content="Langit Instrument — riset dan pengembangan AI, Computer Vision, IoT, Embedded System, FPGA, dan Instrumentasi Elektronik. Solusi teknologi dari desain hardware hingga implementasi sistem cerdas.">
+  <meta name="keywords" content="Langit Instrument, AI, Computer Vision, IoT, Embedded System, FPGA, Instrumentasi Elektronik, riset teknologi">
+  <meta name="author" content="Langit Instrument">
+  <meta name="theme-color" content="#101108" id="themeColorMeta">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="id_ID">
+  <meta property="og:site_name" content="Langit Instrument">
+  <meta property="og:title" content="Langit Instrument — Riset &amp; Pengembangan Teknologi">
+  <meta property="og:description" content="AI, Computer Vision, IoT, Embedded System, FPGA, dan Instrumentasi Elektronik — dari desain hardware hingga implementasi sistem cerdas.">
+  <meta property="og:image" content="assets/img/banner.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Langit Instrument — Riset &amp; Pengembangan Teknologi">
+  <meta name="twitter:description" content="AI, Computer Vision, IoT, Embedded System, FPGA, dan Instrumentasi Elektronik.">
+  <meta name="twitter:image" content="assets/img/banner.png">
+  <link rel="icon" type="image/png" href="assets/img/logo_square.png">
+  <link rel="apple-touch-icon" href="assets/img/logo_square.png">
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem("langit-theme");
+        var theme = stored || (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+        document.documentElement.setAttribute("data-theme", theme);
+      } catch (error) {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/theme.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Langit Instrument",
+      "description": "Riset dan pengembangan AI, Computer Vision, IoT, Embedded System, FPGA, dan Instrumentasi Elektronik.",
+      "logo": "assets/img/logo_square.png",
+      "telephone": "+62-813-3832-7438",
+      "sameAs": [
+        "https://www.facebook.com/langitinstrument/",
+        "https://medium.com/@yunusmuhammad007",
+        "https://www.youtube.com/channel/UC5-3Ue-dDU3TV0m1MQJ0EOA"
+      ]
+    }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Lompat ke konten</a>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="Langit Instrument — Beranda">
+        <img class="brand__mark" src="assets/img/logo_square.png" alt="" width="38" height="38">
+        <span class="brand__text">
+          <strong>Langit</strong>
+          <span>Instrument</span>
+        </span>
+      </a>
+      <nav class="nav" id="primaryNav" aria-label="Navigasi utama">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#beranda">Beranda</a></li>
+          <li><a class="nav__link" href="#layanan">Layanan</a></li>
+          <li><a class="nav__link" href="#artikel">Artikel</a></li>
+          <li><a class="nav__link" href="#video">Video</a></li>
+          <li><a class="nav__link" href="#tentang">Tentang</a></li>
+          <li><a class="nav__link" href="#kontak">Kontak</a></li>
+        </ul>
+        <div class="nav__actions">
+          <a class="btn btn--accent btn--sm" href="https://wa.me/6281338327438?text=Halo%20Langit%20Instrument%2C%20saya%20ingin%20berkonsultasi%20mengenai%20proyek%20riset%20dan%20teknologi." target="_blank" rel="noopener">
+            <i data-lucide="message-circle"></i> Hubungi via WhatsApp
+          </a>
+        </div>
+      </nav>
+      <div class="header__tools">
+        <button class="icon-btn" type="button" data-theme-toggle aria-label="Aktifkan tema terang" title="Tema terang" aria-pressed="false">
+          <i data-lucide="sun" class="theme-icon theme-icon--sun"></i>
+          <i data-lucide="moon" class="theme-icon theme-icon--moon"></i>
+        </button>
+        <button class="icon-btn nav-toggle" type="button" data-nav-toggle aria-label="Buka menu" aria-controls="primaryNav" aria-expanded="false">
+          <i data-lucide="menu" class="nav-icon nav-icon--open"></i>
+          <i data-lucide="x" class="nav-icon nav-icon--close"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="beranda">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow">Riset &amp; Pengembangan Teknologi</p>
+          <h1 class="hero__title">Merancang instrumen, <em>membangun sistem cerdas.</em></h1>
+          <p class="hero__lead">
+            Langit Instrument bergerak di bidang <strong>AI, Computer Vision, IoT, Embedded System, FPGA,</strong>
+            dan <strong>Instrumentasi Elektronik</strong> — menyediakan solusi teknologi dari desain hardware
+            hingga implementasi sistem cerdas.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--accent" href="#artikel">
+              <i data-lucide="book-open"></i> Lihat Artikel
+            </a>
+            <a class="btn btn--ghost" href="https://wa.me/6281338327438?text=Halo%20Langit%20Instrument%2C%20saya%20ingin%20berkonsultasi%20mengenai%20proyek%20riset%20dan%20teknologi." target="_blank" rel="noopener">
+              <i data-lucide="message-circle"></i> Konsultasi via WhatsApp
+            </a>
+          </div>
+          <ul class="hero__chips" aria-label="Bidang keahlian">
+            <li class="chip"><i data-lucide="brain-circuit"></i> AI</li>
+            <li class="chip"><i data-lucide="eye"></i> Computer Vision</li>
+            <li class="chip"><i data-lucide="radio-tower"></i> IoT</li>
+            <li class="chip"><i data-lucide="cpu"></i> Embedded</li>
+            <li class="chip"><i data-lucide="circuit-board"></i> FPGA</li>
+            <li class="chip"><i data-lucide="gauge"></i> Instrumentasi</li>
+          </ul>
+        </div>
+        <div class="hero__panel">
+          <div class="instrument">
+            <div class="instrument__bar">
+              <span>Scope // LI-01</span>
+              <span class="instrument__lights" aria-hidden="true"><span></span><span></span><span></span></span>
+            </div>
+            <div class="instrument__screen">
+              <img src="assets/img/banner.png" alt="Banner Langit Instrument" width="1024" height="640">
+              <div class="instrument__scan" aria-hidden="true"></div>
+            </div>
+            <div class="instrument__readout" aria-hidden="true">
+              <div class="readout"><span>Mode</span><strong>R&amp;D</strong></div>
+              <div class="readout"><span>Ref</span><strong>25.000 MHz</strong></div>
+              <div class="readout"><span>Bus</span><strong>I²C · JTAG</strong></div>
+            </div>
+            <div class="instrument__foot">
+              <span>Langit Instrument // Lab Bench</span>
+              <span><span class="status-dot"></span>Online</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="layanan">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-head__copy">
+            <p class="eyebrow">01 // Bidang Kerja</p>
+            <h2 class="section-title">Kapabilitas dari <em>hardware</em> hingga <em>kecerdasan</em>.</h2>
+            <p class="section-sub">Enam bidang yang saling terhubung untuk membangun instrumen dan sistem yang utuh — bukan sekadar potongan komponen.</p>
+          </div>
+        </div>
+        <div class="services">
+          <article class="service reveal">
+            <span class="service__index">01</span>
+            <div class="service__icon"><i data-lucide="brain-circuit"></i></div>
+            <h3>AI &amp; Machine Learning</h3>
+            <p>Perancangan model, pipeline data, dan otomasi cerdas untuk kebutuhan spesifik.</p>
+          </article>
+          <article class="service reveal">
+            <span class="service__index">02</span>
+            <div class="service__icon"><i data-lucide="eye"></i></div>
+            <h3>Computer Vision</h3>
+            <p>Deteksi, segmentasi, tracking, dan analisis visual secara real-time.</p>
+          </article>
+          <article class="service reveal">
+            <span class="service__index">03</span>
+            <div class="service__icon"><i data-lucide="radio-tower"></i></div>
+            <h3>IoT</h3>
+            <p>Sensor, gateway, dan konektivitas perangkat menuju platform monitoring.</p>
+          </article>
+          <article class="service reveal">
+            <span class="service__index">04</span>
+            <div class="service__icon"><i data-lucide="cpu"></i></div>
+            <h3>Embedded System</h3>
+            <p>Firmware bare-metal maupun RTOS, integrasi MCU/SoC, dan periferal.</p>
+          </article>
+          <article class="service reveal">
+            <span class="service__index">05</span>
+            <div class="service__icon"><i data-lucide="circuit-board"></i></div>
+            <h3>FPGA</h3>
+            <p>RTL design, soft-core processor, dan akselerasi berbasis hardware.</p>
+          </article>
+          <article class="service reveal">
+            <span class="service__index">06</span>
+            <div class="service__icon"><i data-lucide="gauge"></i></div>
+            <h3>Instrumentasi Elektronik</h3>
+            <p>Desain sistem pengukuran, kalibrasi, dan akuisisi data yang akurat.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="artikel">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-head__copy">
+            <p class="eyebrow">02 // Tulisan &amp; Eksperimen</p>
+            <h2 class="section-title">Catatan dari <em>meja kerja</em>.</h2>
+            <p class="section-sub">Riset, eksperimen, dan tutorial teknis yang dipublikasikan di Medium — dari VFO portabel sampai soft-core RISC-V di FPGA.</p>
+          </div>
+          <a class="btn btn--ghost btn--sm" href="https://medium.com/@yunusmuhammad007" target="_blank" rel="noopener">
+            <i data-lucide="book-open"></i> Profil Medium
+          </a>
+        </div>
+
+        <div class="highlight-grid" id="highlightGrid">
+          <noscript>
+            <p class="empty-state">Aktifkan JavaScript untuk menampilkan artikel unggulan.</p>
+          </noscript>
+        </div>
+
+        <div class="articles-toolbar reveal" style="margin-top: clamp(2rem, 4vw, 3rem)">
+          <div class="filter-bar" id="categoryFilters" role="group" aria-label="Filter kategori artikel"></div>
+          <p class="article-count" id="articleCount" aria-live="polite">Memuat artikel…</p>
+        </div>
+        <div class="article-grid" id="articleGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="video">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-head__copy">
+            <p class="eyebrow">03 // Video</p>
+            <h2 class="section-title">Demonstrasi &amp; <em>walkthrough</em>.</h2>
+            <p class="section-sub">Eksperimen hardware, firmware, dan AI yang direkam langsung dari bench.</p>
+          </div>
+          <a class="btn btn--ghost btn--sm" href="https://www.youtube.com/channel/UC5-3Ue-dDU3TV0m1MQJ0EOA" target="_blank" rel="noopener">
+            <i data-lucide="monitor-play"></i> Semua video
+          </a>
+        </div>
+        <div class="video-grid" id="videoGrid">
+          <noscript>
+            <p class="empty-state">Aktifkan JavaScript untuk menampilkan video.</p>
+          </noscript>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="tentang">
+      <div class="container about">
+        <div class="about__visual reveal">
+          <div class="about__plate">
+            <img src="assets/img/logo_square.png" alt="Logo Langit Instrument" width="230" height="230" loading="lazy">
+            <dl class="about__spec">
+              <dt>Nama</dt><dd>Langit Instrument</dd>
+              <dt>Fokus</dt><dd>Riset &amp; Pengembangan Teknologi</dd>
+              <dt>Bidang</dt><dd>AI · CV · IoT · FPGA · Instrumentasi</dd>
+              <dt>Status</dt><dd>Terbuka untuk kolaborasi</dd>
+            </dl>
+          </div>
+        </div>
+        <div class="about__copy reveal">
+          <p class="eyebrow">04 // Tentang</p>
+          <h2 class="section-title">Dari desain hardware hingga <em>sistem cerdas</em>.</h2>
+          <p>Langit Instrument adalah ruang riset dan pengembangan yang berfokus pada AI, Computer Vision, IoT, Embedded System, FPGA, dan Instrumentasi Elektronik.</p>
+          <p>Kami menyediakan solusi teknologi dari desain hardware hingga implementasi sistem cerdas — mulai dari pemilihan komponen, perancangan PCB dan RTL, firmware, hingga integrasi model AI dan visualisasi data.</p>
+          <ul class="about__list">
+            <li><i data-lucide="check"></i> Desain hardware, PCB, dan integrasi sistem</li>
+            <li><i data-lucide="check"></i> Firmware bare-metal, RTOS, dan embedded Linux</li>
+            <li><i data-lucide="check"></i> RTL/FPGA dan soft-core processor</li>
+            <li><i data-lucide="check"></i> AI, computer vision, dan akuisisi data</li>
+          </ul>
+          <div class="stats">
+            <div class="stat"><strong id="statArticles">10</strong><span>Artikel</span></div>
+            <div class="stat"><strong id="statVideos">13</strong><span>Video</span></div>
+            <div class="stat"><strong>06</strong><span>Bidang</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="kontak">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-head__copy">
+            <p class="eyebrow">05 // Kontak</p>
+            <h2 class="section-title">Punya ide atau <em>kebutuhan teknis</em>?</h2>
+            <p class="section-sub">Ceritakan kebutuhanmu — dari prototipe cepat sampai pengembangan sistem penuh.</p>
+          </div>
+        </div>
+        <div class="contact-grid">
+          <a class="contact-card contact-card--wa reveal" href="https://wa.me/6281338327438?text=Halo%20Langit%20Instrument%2C%20saya%20ingin%20berkonsultasi%20mengenai%20proyek%20riset%20dan%20teknologi." target="_blank" rel="noopener">
+            <span class="contact-card__icon"><i data-lucide="message-circle"></i></span>
+            <div class="contact-card__body">
+              <h3>WhatsApp</h3>
+              <p>Konsultasi langsung, diskusi teknis, dan koordinasi proyek.</p>
+              <span class="contact-card__value">+62 813-3832-7438</span>
+            </div>
+            <span class="contact-card__arrow"><i data-lucide="arrow-up-right"></i></span>
+          </a>
+          <a class="contact-card contact-card--fb reveal" href="https://www.facebook.com/langitinstrument/" target="_blank" rel="noopener">
+            <span class="contact-card__icon"><i data-lucide="users"></i></span>
+            <div class="contact-card__body">
+              <h3>Facebook</h3>
+              <p>Ikuti update kegiatan, dokumentasi, dan diskusi komunitas.</p>
+              <span class="contact-card__value">facebook.com/langitinstrument</span>
+            </div>
+            <span class="contact-card__arrow"><i data-lucide="arrow-up-right"></i></span>
+          </a>
+        </div>
+        <p class="contact-note"><i data-lucide="clock"></i> Biasanya membalas dalam 1×24 jam pada hari kerja.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="Langit Instrument — Beranda">
+            <img class="brand__mark" src="assets/img/logo_square.png" alt="" width="38" height="38" loading="lazy">
+            <span class="brand__text">
+              <strong>Langit</strong>
+              <span>Instrument</span>
+            </span>
+          </a>
+          <p>Riset &amp; pengembangan AI, Computer Vision, IoT, Embedded System, FPGA, dan Instrumentasi Elektronik.</p>
+          <div class="footer-social">
+            <a href="https://medium.com/@yunusmuhammad007" target="_blank" rel="noopener" aria-label="Medium"><i data-lucide="book-open"></i></a>
+            <a href="https://www.youtube.com/channel/UC5-3Ue-dDU3TV0m1MQJ0EOA" target="_blank" rel="noopener" aria-label="YouTube"><i data-lucide="monitor-play"></i></a>
+            <a href="https://www.facebook.com/langitinstrument/" target="_blank" rel="noopener" aria-label="Facebook"><i data-lucide="users"></i></a>
+            <a href="https://wa.me/6281338327438" target="_blank" rel="noopener" aria-label="WhatsApp"><i data-lucide="message-circle"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigasi</h4>
+          <ul>
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#layanan">Layanan</a></li>
+            <li><a href="#artikel">Artikel</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#tentang">Tentang</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Konten</h4>
+          <ul>
+            <li><a href="https://medium.com/@yunusmuhammad007" target="_blank" rel="noopener"><i data-lucide="book-open"></i> Medium</a></li>
+            <li><a href="https://www.youtube.com/channel/UC5-3Ue-dDU3TV0m1MQJ0EOA" target="_blank" rel="noopener"><i data-lucide="monitor-play"></i> YouTube</a></li>
+            <li><a href="https://www.facebook.com/langitinstrument/" target="_blank" rel="noopener"><i data-lucide="users"></i> Facebook</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Kontak</h4>
+          <ul>
+            <li><a href="https://wa.me/6281338327438" target="_blank" rel="noopener"><i data-lucide="message-circle"></i> +62 813-3832-7438</a></li>
+            <li><a href="https://www.facebook.com/langitinstrument/" target="_blank" rel="noopener"><i data-lucide="users"></i> Langit Instrument</a></li>
+            <li><a href="https://medium.com/@yunusmuhammad007" target="_blank" rel="noopener"><i data-lucide="pen-line"></i> @yunusmuhammad007</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="year">2026</span> Langit Instrument. Seluruh hak cipta dilindungi.</span>
+        <span>Riset · Rekayasa · Instrumentasi</span>
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/6281338327438?text=Halo%20Langit%20Instrument%2C%20saya%20ingin%20berkonsultasi%20mengenai%20proyek%20riset%20dan%20teknologi." target="_blank" rel="noopener" aria-label="Hubungi Langit Instrument via WhatsApp">
+    <i data-lucide="message-circle"></i>
+    <span class="wa-float__label">Chat via WhatsApp</span>
+  </a>
+
+  <button class="to-top" type="button" data-back-top aria-label="Kembali ke atas">
+    <i data-lucide="arrow-up"></i>
+  </button>
+
+  <div class="video-modal" id="videoModal" role="dialog" aria-modal="true" aria-labelledby="videoModalTitle" hidden>
+    <div class="video-modal__backdrop" data-modal-close></div>
+    <div class="video-modal__dialog" role="document">
+      <div class="video-modal__head">
+        <p class="video-modal__title" id="videoModalTitle">Video</p>
+        <button class="icon-btn" type="button" data-modal-close aria-label="Tutup video">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+      <div class="video-modal__frame" id="videoModalFrame"></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="assets/data/articles.js"></script>
+  <script src="assets/data/videos.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/ui.js"></script>
+  <script src="assets/js/home.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    if (window.lucide && window.lucide.createIcons) {
+      window.lucide.createIcons();
+    }
+  </script>
+</body>
+</html>
