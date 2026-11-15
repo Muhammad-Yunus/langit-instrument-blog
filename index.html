@@ -125,17 +125,19 @@
         <div class="hero__panel">
           <div class="instrument">
             <div class="instrument__bar">
-              <span>Scope // LI-01</span>
+              <span>Spectrum // LI-01</span>
               <span class="instrument__lights" aria-hidden="true"><span></span><span></span><span></span></span>
             </div>
-            <div class="instrument__screen">
-              <img src="assets/img/banner.png" alt="Banner Langit Instrument" width="1024" height="640">
+            <div class="instrument__screen" id="spectrumScreen">
+              <canvas id="spectrumCanvas" role="img" aria-label="Simulasi spectrum analyzer: puncak sinyal pada 140,200 MHz dengan display waterfall di bawahnya">
+                Spectrum analyzer membutuhkan JavaScript.
+              </canvas>
               <div class="instrument__scan" aria-hidden="true"></div>
             </div>
             <div class="instrument__readout" aria-hidden="true">
-              <div class="readout"><span>Mode</span><strong>R&amp;D</strong></div>
-              <div class="readout"><span>Ref</span><strong>25.000 MHz</strong></div>
-              <div class="readout"><span>Bus</span><strong>I²C · JTAG</strong></div>
+              <div class="readout"><span>Mode</span><strong>SA</strong></div>
+              <div class="readout"><span>Center</span><strong>140.200 MHz</strong></div>
+              <div class="readout"><span>Span</span><strong>800 kHz</strong></div>
             </div>
             <div class="instrument__foot">
               <span>Langit Instrument // Lab Bench</span>
@@ -393,6 +395,7 @@
   <script src="assets/js/theme.js"></script>
   <script src="assets/js/ui.js"></script>
   <script src="assets/js/home.js"></script>
+  <script src="assets/js/spectrum.js"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
   <script>
     if (window.lucide && window.lucide.createIcons) {

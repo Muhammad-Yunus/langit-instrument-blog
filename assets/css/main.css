@@ -296,13 +296,14 @@
   overflow: hidden;
   border: 1px solid var(--border);
   border-radius: 10px;
-  background: var(--bg);
+  background: #0a0c05;
+  box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.55);
 }
 
-.instrument__screen img {
+.instrument__screen canvas {
+  display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 
 .instrument__scan {
@@ -311,10 +312,10 @@
   pointer-events: none;
   background: repeating-linear-gradient(
     0deg,
-    rgba(0, 0, 0, 0.22) 0 1px,
+    rgba(0, 0, 0, 0.16) 0 1px,
     transparent 1px 3px
   );
-  opacity: 0.35;
+  opacity: 0.4;
 }
 
 .instrument__screen::after {
@@ -324,8 +325,8 @@
   right: 0;
   top: 0;
   height: 28%;
-  background: linear-gradient(180deg, transparent, var(--accent-line), transparent);
-  opacity: 0.55;
+  background: linear-gradient(180deg, transparent, rgba(229, 231, 147, 0.16), transparent);
+  opacity: 0.5;
   animation: scanline 5.5s linear infinite;
   pointer-events: none;
 }
